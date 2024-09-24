@@ -1,0 +1,16 @@
+  637  ls -l
+  638  cd test_rep
+  639  ls -la
+  640  git checkout -b feature
+  641  git branch
+  642  ls -la
+  643  echo "new_change" >> README.md
+  644  echo "new_change" >> .gitignore
+  645  git add ./
+  646  git status
+  647  git commit -m "change"
+  648  git push origin feature
+  649  git log
+  650  git commit --amend
+  651  git checkout main
+  652  git merge feature
